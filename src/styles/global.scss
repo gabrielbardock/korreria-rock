@@ -1,0 +1,154 @@
+@use "./variables" as *;
+
+:root {
+  font-family: $font-family;
+  color: $paper;
+  background: $dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --paper: #{$paper};
+  --muted: #{$muted};
+  --red: #{$red};
+  --dark: #{$dark};
+  --line: #{$line};
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 82px;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: $dark;
+  font-family: $font-family;
+}
+
+body,
+button,
+a {
+  font-family: $font-family;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  color: inherit;
+}
+
+::selection {
+  color: white;
+  background: $red;
+}
+
+.section-wrap {
+  width: min(1120px, calc(100% - 80px));
+  margin: auto;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #aaa59d;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .2em;
+
+  span {
+    color: $red;
+  }
+}
+
+.eyebrow {
+  margin: 0;
+  color: #d3cec5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .2em;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 19px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  transition: background .2s, color .2s, border .2s;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.button-red {
+  color: white;
+  background: $red;
+
+  &:hover {
+    background: #c7241b;
+  }
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  transition: color .2s;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &:hover {
+    color: $red;
+  }
+}
+
+@media (max-width: 800px) {
+  .section-wrap {
+    width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    scroll-padding-top: 68px;
+  }
+
+  .section-wrap {
+    width: calc(100% - 42px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}

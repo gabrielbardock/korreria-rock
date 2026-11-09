@@ -1,0 +1,86 @@
+@use "../../styles/variables" as *;
+
+.site-footer {
+  background: $dark;
+}
+
+.footer-inner {
+  width: min(1120px, calc(100% - 80px));
+  min-height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: auto;
+  border-top: 1px solid $line;
+
+  > p {
+    color: #8d8880;
+    font-size: 10px;
+
+    span {
+      margin-left: 12px;
+      color: #66625d;
+    }
+  }
+}
+
+.footer-brand {
+  width: 82px;
+  height: 50px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.back-top {
+  color: #a7a29a;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-inner {
+    width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    width: calc(100% - 42px);
+    min-height: 115px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0 12px;
+    padding: 16px 0;
+
+    > p {
+      order: 2;
+      width: 100%;
+      margin: 0;
+      font-size: 9px;
+
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .footer-brand {
+    width: 68px;
+    height: 42px;
+  }
+
+  .back-top {
+    font-size: 8px;
+  }
+}

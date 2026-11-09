@@ -1,0 +1,168 @@
+@use "../../styles/variables" as *;
+
+.agenda-section {
+  padding-top: 106px;
+  padding-bottom: 110px;
+}
+
+.agenda-card {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  margin-top: 33px;
+  padding: 52px 7%;
+  overflow: hidden;
+  border: 1px solid $line;
+  background: linear-gradient(108deg, #1d1b19, #141312);
+
+  &::before,
+  &::after {
+    position: absolute;
+    border: 1px solid rgba(239, 52, 41, .13);
+    border-radius: 50%;
+    content: "";
+  }
+
+  &::before {
+    top: -146px;
+    right: -52px;
+    width: 510px;
+    height: 510px;
+  }
+
+  &::after {
+    top: -74px;
+    right: 21px;
+    width: 365px;
+    height: 365px;
+    border-color: rgba(239, 52, 41, .1);
+  }
+}
+
+.agenda-stamp {
+  position: absolute;
+  top: 42px;
+  right: 8%;
+  width: 64px;
+  height: 64px;
+  display: grid;
+  align-content: center;
+  border: 1px solid $red;
+  border-radius: 50%;
+  color: $red;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+  transform: rotate(12deg);
+}
+
+.agenda-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+
+  .eyebrow {
+    color: #a8a29a;
+  }
+
+  h2 {
+    margin: 20px 0 0;
+    font-size: clamp(42px, 5vw, 62px);
+    letter-spacing: -.065em;
+
+    span {
+      color: $red;
+    }
+  }
+
+  > p:not(.eyebrow) {
+    max-width: 420px;
+    margin: 18px 0 22px;
+    color: #aaa59d;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .button {
+    min-height: 44px;
+  }
+}
+
+.agenda-note {
+  position: absolute;
+  right: 7%;
+  bottom: 52px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #aaa39a;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.note-line {
+  width: 25px;
+  height: 1px;
+  background: $red;
+}
+
+@media (max-width: 600px) {
+  .agenda-section {
+    padding-top: 75px;
+    padding-bottom: 76px;
+  }
+
+  .agenda-card {
+    min-height: 430px;
+    align-items: flex-start;
+    margin-top: 25px;
+    padding: 51px 22px 80px;
+
+    &::before {
+      right: -265px;
+    }
+
+    &::after {
+      right: -190px;
+    }
+  }
+
+  .agenda-stamp {
+    top: 19px;
+    right: 18px;
+    width: 53px;
+    height: 53px;
+    font-size: 9px;
+  }
+
+  .agenda-copy {
+    margin-top: 28px;
+
+    h2 {
+      font-size: clamp(42px, 10.4vw, 58px);
+    }
+
+    > p:not(.eyebrow) {
+      max-width: 300px;
+      font-size: 11px;
+    }
+
+    .button {
+      gap: 12px;
+      padding: 0 12px;
+      font-size: 9px;
+    }
+  }
+
+  .agenda-note {
+    right: 17px;
+    bottom: 20px;
+    font-size: 7px;
+  }
+}
