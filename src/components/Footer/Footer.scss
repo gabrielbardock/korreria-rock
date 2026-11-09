@@ -15,29 +15,29 @@
   border-top: 1px solid $line;
 
   > p {
-    color: #8d8880;
-    font-size: 10px;
+    color: #fff;
+    font-size: 12px;
 
     span {
       margin-left: 12px;
-      color: #66625d;
+      color: #fff;
     }
   }
 }
 
 .footer-brand {
-  width: 82px;
-  height: 50px;
+  width: 120px;
+  height: 62px;
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
 }
 
 .back-top {
-  color: #a7a29a;
+  color: #fff;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: .08em;

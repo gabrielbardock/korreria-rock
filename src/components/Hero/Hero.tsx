@@ -15,7 +15,6 @@ function Hero() {
         </div>
       </div>
       <a className="scroll-cue" href="#sobre"><span /> Desça para conhecer</a>
-      <p className="hero-side-note">DO PALCO<br />PRA VOCÊ</p>
     </section>
   );
 }

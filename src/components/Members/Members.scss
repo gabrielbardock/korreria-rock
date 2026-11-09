@@ -14,7 +14,7 @@
 
   .eyebrow {
     margin-bottom: 18px;
-    color: #aaa59d;
+    color: #fff;
   }
 
   h2 {
@@ -30,9 +30,10 @@
   > p {
     max-width: 310px;
     margin: 0 0 6px;
-    color: #a7a29a;
+    color: #fff;
     font-size: 13px;
     line-height: 1.7;
+    letter-spacing: .8px;
   }
 }
 
@@ -80,7 +81,7 @@
   top: 15px;
   left: 17px;
   color: #fff;
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: .1em;
 }
 
@@ -90,7 +91,7 @@
   right: 14px;
   bottom: 13px;
   color: #fff;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: .14em;
   text-transform: uppercase;
@@ -118,7 +119,7 @@
 .member-bio {
   min-height: 86px;
   margin: 12px 0 16px;
-  color: #aaa59d;
+  color: #fff;
   font-size: 13px;
   line-height: 1.65;
 }
@@ -186,13 +187,13 @@
   }
 
   .member-card {
-    display: grid;
-    grid-template-columns: 38% 1fr;
+    display: block;
   }
 
   .member-art {
-    height: 100%;
-    min-height: 205px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
   }
 
   .member-number {
@@ -203,7 +204,7 @@
   .member-role {
     right: 7px;
     bottom: 10px;
-    font-size: 7px;
+    font-size: 12px;
   }
 
   .member-photo {
@@ -214,17 +215,17 @@
     padding: 16px 13px;
 
     h3 {
-      font-size: 17px;
+      font-size: 20px;
     }
   }
 
   .member-bio {
     min-height: 0;
     margin: 10px 0 13px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .instagram-link {
-    font-size: 12px;
+    font-size: 13px;
   }
 }

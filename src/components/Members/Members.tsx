@@ -9,7 +9,6 @@ function Members() {
         <div className="section-label"><span>02</span> QUEM FAZ A KORRERIA</div>
         <div className="section-heading">
           <div>
-            <p className="eyebrow">CINCO PESSOAS. UMA SÓ FREQUÊNCIA.</p>
             <h2>Conheça a <span>banda.</span></h2>
           </div>
           <p>Histórias diferentes, a mesma paixão pelo palco e pela música.</p>

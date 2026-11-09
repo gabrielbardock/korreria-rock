@@ -17,9 +17,9 @@ function Contact() {
               <span className="contact-kicker">WHATSAPP / TELEFONE</span>
               <span className="contact-value">(16) 98137-5929 <ArrowIcon diagonal /></span>
             </a>
-            <a className="contact-item" href="mailto:gabriel.henrique.gf01@gmail.com">
+            <a className="contact-item" href="mailto:korreriarock@gmail.com">
               <span className="contact-kicker">E-MAIL</span>
-              <span className="contact-value">gabriel.henrique.gf01@gmail.com <ArrowIcon diagonal /></span>
+              <span className="contact-value">korreriarock@gmail.com <ArrowIcon diagonal /></span>
             </a>
             <a className="button button-outline" href="https://wa.me/5516981375929" target="_blank" rel="noreferrer">
               Chama no WhatsApp <ArrowIcon diagonal />

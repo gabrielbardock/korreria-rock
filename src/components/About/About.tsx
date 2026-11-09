@@ -21,11 +21,11 @@ function About() {
           <a className="text-link red-link" href="#integrantes">Essa é a Korreria <ArrowIcon /></a>
         </div>
       </div>
-      <div className="value-strip">
-        <div><strong>80, 90, 2000<span>’</span>s</strong><span>Hinos que marcaram época</span></div>
+      {/* <div className="value-strip">
+        <div><strong>80 - 2000<span>’</span>s</strong><span>Hinos que marcaram época</span></div>
         <div><strong>100<span>%</span></strong><span>Energia em cada show</span></div>
         <div><strong>∞</strong><span>Rock sem data de validade</span></div>
-      </div>
+      </div> */}
     </section>
   );
 }
