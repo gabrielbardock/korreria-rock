@@ -1,4 +1,4 @@
-import logo from "../../../assets/logo-branca.png";
+import logo from "../../../assets/logo/logo-branca.png";
 import "./Footer.scss";
 
 function Footer() {

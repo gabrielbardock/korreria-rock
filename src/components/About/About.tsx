@@ -6,7 +6,7 @@ function About() {
     <section className="intro section-wrap" id="sobre">
       <div className="section-label"><span>01</span> QUEM SOMOS</div>
       <div className="intro-content">
-        <h2>Sobre a<br /><span>Korreria Rock.</span></h2>
+        <h2>Sobre a<br /><span>korreria rocK</span></h2>
         <div className="intro-text">
           <p>
             Somos apaixonados por rock nacional e internacional de todas as épocas.

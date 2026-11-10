@@ -7,10 +7,12 @@
   h2 {
     margin: 0;
     font-size: clamp(43px, 6vw, 72px);
-    letter-spacing: -.065em;
+    letter-spacing: .8px;
 
     span {
       color: $red;
+      font-family: "Rhinos Rock", sans-serif;
+      letter-spacing: .8px;
     }
   }
 }

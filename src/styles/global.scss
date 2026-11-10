@@ -1,5 +1,13 @@
 @use "./variables" as *;
 
+@font-face {
+  font-family: "Rhinos Rock";
+  src: url("../../assets/fonts/rhinos-rocks.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 :root {
   font-family: $font-family;
   color: $paper;

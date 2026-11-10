@@ -45,7 +45,7 @@ export const members: BandMember[] = [
   {
     role: "Guitarrista",
     name: "Vinicius Carilo",
-    nickname: "Bebezão",
+    nickname: "Bebezao",
     bio: "Começou a estudar guitarra aos 7 anos. Hoje também é professor de música e luthier, levando sua experiência técnica a diferentes projetos da cena.",
     instagram: "viniciuscarilo",
     photo: bebezaoPhoto,

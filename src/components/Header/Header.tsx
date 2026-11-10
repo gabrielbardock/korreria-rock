@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../../assets/logo-branca.png";
+import logo from "../../../assets/logo/logo-branca.png";
 import { ArrowIcon } from "../shared/Icons";
 import "./Header.scss";
 
