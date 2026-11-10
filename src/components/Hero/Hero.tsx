@@ -1,5 +1,5 @@
 import logo from "../../../assets/logo/logo-branca.png";
-import { ArrowIcon } from "../shared/Icons";
+import { ArrowIcon, InstagramIcon } from "../shared/Icons";
 import "./Hero.scss";
 
 function Hero() {
@@ -12,6 +12,15 @@ function Hero() {
         <div className="hero-actions">
           <a className="button button-red" href="#agenda">Veja a agenda <ArrowIcon /></a>
           <a className="text-link" href="#sobre">Conheça a banda <ArrowIcon /></a>
+          <a
+            className="text-link hero-instagram"
+            href="https://www.instagram.com/korreriarock/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Siga a Korreria Rock no Instagram, @korreriarock"
+          >
+            <InstagramIcon /> @korreriarock <ArrowIcon diagonal />
+          </a>
         </div>
       </div>
       <a className="scroll-cue" href="#sobre" data-reveal="up"><span /> Desça para conhecer</a>

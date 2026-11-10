@@ -98,6 +98,15 @@
   margin-top: 27px;
 }
 
+.hero-instagram {
+  gap: 8px;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
 .scroll-cue {
   position: absolute;
   z-index: 1;
