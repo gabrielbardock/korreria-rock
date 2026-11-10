@@ -4,8 +4,8 @@ import "./Agenda.scss";
 function Agenda() {
   return (
     <section className="agenda-section section-wrap" id="agenda">
-      <div className="section-label"><span>03</span> PRÓXIMOS SHOWS</div>
-      <div className="agenda-card">
+      <div className="section-label" data-reveal="left"><span>03</span> PRÓXIMOS SHOWS</div>
+      <div className="agenda-card" data-reveal="up">
         <div className="agenda-stamp" aria-hidden="true">AO<br />VIVO</div>
         <div className="agenda-copy">
           <p className="eyebrow">A GENTE SE VÊ NA FRENTE DO PALCO</p>

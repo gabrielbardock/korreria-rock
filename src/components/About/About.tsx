@@ -4,8 +4,8 @@ import "./About.scss";
 function About() {
   return (
     <section className="intro section-wrap" id="sobre">
-      <div className="section-label"><span>01</span> QUEM SOMOS</div>
-      <div className="intro-content">
+      <div className="section-label" data-reveal="left"><span>01</span> QUEM SOMOS</div>
+      <div className="intro-content" data-reveal="up">
         <h2>Sobre a<br /><span>korreria rocK</span></h2>
         <div className="intro-text">
           <p>

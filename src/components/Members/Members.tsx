@@ -6,8 +6,8 @@ function Members() {
   return (
     <section className="members-section" id="integrantes">
       <div className="section-wrap">
-        <div className="section-label"><span>02</span> QUEM FAZ A KORRERIA</div>
-        <div className="section-heading">
+        <div className="section-label" data-reveal="left"><span>02</span> QUEM FAZ A KORRERIA</div>
+        <div className="section-heading" data-reveal="up">
           <div>
             <h2>Conheça a <span>banda.</span></h2>
           </div>

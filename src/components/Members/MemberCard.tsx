@@ -7,7 +7,7 @@ type MemberCardProps = {
 
 function MemberCard({ member }: MemberCardProps) {
   return (
-    <article className="member-card">
+    <article className="member-card" data-reveal="up">
       <div className="member-art">
         <img className="member-photo" src={member.photo} alt={`Foto de ${member.name}, ${member.nickname}`} />
         <span className="member-number">{member.number}</span>

@@ -136,6 +136,39 @@ button {
   }
 }
 
+html.has-scroll-reveal [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1);
+}
+
+html.has-scroll-reveal [data-reveal="left"] {
+  transform: translate3d(-24px, 0, 0);
+}
+
+html.has-scroll-reveal [data-revealed="true"] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.members-grid [data-reveal]:nth-child(2),
+.contact-details [data-reveal]:nth-child(2) {
+  transition-delay: .12s;
+}
+
+.members-grid [data-reveal]:nth-child(3),
+.contact-details [data-reveal]:nth-child(3) {
+  transition-delay: .24s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.has-scroll-reveal [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 @media (max-width: 800px) {
   .section-wrap {
     width: calc(100% - 48px);

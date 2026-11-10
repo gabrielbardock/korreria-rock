@@ -19,7 +19,7 @@ function Header() {
       <div className="header-inner">
         <a
           className="brand"
-          href="#inicio"
+          href="/"
           aria-label="Korreria Rock — início"
           onClick={() => setMenuOpen(false)}
         >
